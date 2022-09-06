@@ -1,0 +1,23 @@
+import axios from 'axios';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+
+const LOAD_COINS = 'crypto-hunter/crytoData/load';
+
+const initialState = [];
+
+const cryptoReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case 'crypto-hunter/crytoData/load/fulfilled':
+      return [...action.payload];
+    default:
+      return state;
+  }
+};
+
+export const loadData = createAsyncThunk(
+  LOAD_COINS,
+  async () => axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
+    .then((res) => res.data),
+);
+
+export default cryptoReducer;
