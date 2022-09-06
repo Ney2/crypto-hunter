@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.accessories {
+  display: flex;
+  gap: 15px;
+}
+
+.crypto-img {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.crypto-img img {
+  width: 100vw;
+}
+
+.filter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  border: none;
+  width: 50%;
+  height: 7%;
+  border-radius: 30px;
+  padding: 2%;
+  transform: translate(-50%, -50%);
+}
+
+.back-arrow {
+  position: absolute;
+  top: 5%;
+  left: 5%;  
+  background-color: #fff; 
+}
+
+.coin-list {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
+
+.coin {
+  border: 2px solid black;
+  padding: 2%;
+}
+
+.first-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.pic {
+  width: 50%;
+  height: 50%;
+}
+
+.second-container {
+  text-align: end;
+  padding: 2%;
+}
