@@ -53,16 +53,16 @@ td {
   margin-bottom: 3%;
 }
 
-@media(min-width: 2500px) {
+@media (min-width: 2500px) {
   .symbol-info p {
     font-size: 3rem;
   }
-  
+
   .title {
     padding-left: 5%;
     text-align: left;
   }
-  
+
   .result {
     text-align: right;
     padding-right: 5%;

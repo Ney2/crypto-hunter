@@ -75,7 +75,7 @@
   padding: 2%;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   * {
     margin: 0;
     padding: 0;
@@ -98,7 +98,7 @@
   }
 }
 
-@media(min-width: 2500px) {
+@media (min-width: 2500px) {
   * {
     margin: 0;
     padding: 0;
@@ -115,7 +115,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  
+
   .filter {
     padding: 1%;
     height: 10%;
@@ -125,7 +125,7 @@
     font-weight: bold;
     font-size: 3rem;
   }
-  
+
   .pic {
     width: 30%;
     height: 30%;

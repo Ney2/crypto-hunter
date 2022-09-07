@@ -21,7 +21,7 @@
   gap: 15px;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   * {
     margin: 0;
     padding: 0;
