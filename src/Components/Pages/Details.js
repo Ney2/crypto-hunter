@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import * as BsIcon from 'react-icons/bs';
 import { singleCoin } from '../../Redux/cryptoData';
 import './Details.css';
 
 const Details = () => {
   const { id } = useParams();
   const [coin, setCoin] = useState();
+
+  const navigate = useNavigate();
+  const navigateHistoricalChart = () => {
+    navigate(`/details/histroicalchart/${id}`);
+  };
 
   const fetchCoin = async () => {
     const { data } = await axios.get(singleCoin(id));
@@ -21,88 +27,91 @@ const Details = () => {
     <section>
       <div className="symbol-container">
         <img className="pic" src={coin?.image.large} alt={coin?.name} />
-        <div className="symbol-info">
-          <p>
-            Name:
-            {' '}
-            {coin?.name}
-          </p>
-          <p>
-            Symbol:
-            {' '}
-            {coin?.symbol}
-          </p>
-          <p>
-            Rank:
-            {' '}
-            {coin?.market_cap_rank}
-          </p>
-        </div>
+        <BsIcon.BsFillArrowRightCircleFill className="arrow" id={id} onClick={navigateHistoricalChart} key={id} />
+      </div>
+      <div className="symbol-info">
+        <p>
+          Name:
+          {' '}
+          {coin?.name}
+        </p>
+        <p>
+          Symbol:
+          {' '}
+          {coin?.symbol}
+        </p>
+        <p>
+          Rank:
+          {' '}
+          {coin?.market_cap_rank}
+        </p>
       </div>
       <div className="details-header">
         <h3>
           Details About
           { ' '}
           {coin?.name}
+          { ' '}
+          Crypto
         </h3>
       </div>
       <table>
         <tbody>
           <tr>
-            <td>Current Price</td>
-            <td>{coin?.market_data.current_price.usd}</td>
+            <td className="title">Current Price</td>
+            <td className="result">{coin?.market_data.current_price.usd}</td>
           </tr>
           <tr>
-            <td>Public Interest Score</td>
-            <td>{coin?.public_interest_score}</td>
+            <td className="title">Public Interest Score</td>
+            <td className="result">{coin?.public_interest_score}</td>
           </tr>
           <tr>
-            <td>Liquidity Score</td>
-            <td>{coin?.liquidity_score}</td>
+            <td className="title">Liquidity Score</td>
+            <td className="result">{coin?.liquidity_score}</td>
           </tr>
           <tr>
-            <td>Ath Percentage Change</td>
-            <td>{coin?.market_data.ath_change_percentage.usd}</td>
+            <td className="title">Ath Percentage Change</td>
+            <td className="result">{coin?.market_data.ath_change_percentage.usd}</td>
           </tr>
           <tr>
-            <td>Ath</td>
-            <td>{coin?.market_data.ath.usd}</td>
+            <td className="title">Ath</td>
+            <td className="result">{coin?.market_data.ath.usd}</td>
           </tr>
           <tr>
-            <td>High Market Data of 24h</td>
-            <td>{coin?.market_data.high_24h.usd}</td>
+            <td className="title">High Market Data of 24h</td>
+            <td className="result">{coin?.market_data.high_24h.usd}</td>
           </tr>
           <tr>
-            <td>Low Market Data of 24h</td>
-            <td>{coin?.market_data.low_24h.usd}</td>
+            <td className="title">Low Market Data of 24h</td>
+            <td className="result">{coin?.market_data.low_24h.usd}</td>
           </tr>
           <tr>
-            <td>Market Cap 24h Change</td>
-            <td>{coin?.market_data.market_cap_change_24h}</td>
+            <td className="title">Market Cap 24h Change</td>
+            <td className="result">{coin?.market_data.market_cap_change_24h}</td>
           </tr>
           <tr>
-            <td>Circulating Supply</td>
-            <td>{coin?.market_data.circulating_supply}</td>
+            <td className="title">Circulating Supply</td>
+            <td className="result">{coin?.market_data.circulating_supply}</td>
           </tr>
           <tr>
-            <td>Market Cap 24h Percentage Change</td>
-            <td>{coin?.market_data.market_cap_change_percentage_24h}</td>
+            <td className="title">Market Cap 24h Percentage Change</td>
+            <td className="result">{coin?.market_data.market_cap_change_percentage_24h}</td>
           </tr>
           <tr>
-            <td>Max Supply</td>
-            <td>{coin?.market_data.max_supply}</td>
+            <td className="title">Max Supply</td>
+            <td className="result">{coin?.market_data.max_supply}</td>
           </tr>
           <tr>
-            <td>Price Change 24h</td>
-            <td>{coin?.market_data.price_change_24h}</td>
+            <td className="title">Price Change 24h</td>
+            <td className="result">{coin?.market_data.price_change_24h}</td>
           </tr>
           <tr>
-            <td>Sentiment Votes Up Percentage</td>
-            <td>{coin?.sentiment_votes_up_percentage}</td>
+            <td className="title">Sentiment Votes Up Percentage</td>
+            <td className="result">{coin?.sentiment_votes_up_percentage}</td>
           </tr>
           <tr>
-            <td>Sentiment Votes Down Percentage</td>
-            <td>{coin?.sentiment_votes_down_percentage}</td>
+            <td className="title">Sentiment Votes Down Percentage</td>
+            <td className="result">{coin?.sentiment_votes_down_percentage}</td>
           </tr>
         </tbody>
       </table>

@@ -1,17 +1,18 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import * as FaIcon from 'react-icons/fa';
 import * as BsIcon from 'react-icons/bs';
 import * as FiIcon from 'react-icons/fi';
 import './Navigation.css';
 
-export default function Navigation() {
+const Navigation = () => {
   const navigate = useNavigate();
   const home = () => {
     navigate('/');
   };
   return (
     <div className="header-container">
-      <BsIcon.BsFillArrowLeftCircleFill onClick={home} />
+      <FaIcon.FaHome onClick={home} />
       <p>Crypto Hunter</p>
       <div className="accessories">
         <BsIcon.BsMic className="mic" />
@@ -19,4 +20,6 @@ export default function Navigation() {
       </div>
     </div>
   );
-}
+};
+
+export default Navigation;

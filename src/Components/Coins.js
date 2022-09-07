@@ -1,11 +1,9 @@
 /* eslint-disable max-len */
 import React, { useEffect, useState } from 'react';
-import {
-  useDispatch, useSelector, shallowEqual,
-} from 'react-redux';
+import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { loadData } from '../Redux/cryptoData';
 import Home from './Pages/Home';
-import bg from './Assets/bg.jpg';
+import './Pages/Home.css';
 
 const Coins = () => {
   const coin = useSelector((state) => state.cryptoReducer, shallowEqual);
@@ -17,7 +15,7 @@ const Coins = () => {
   return (
     <section>
       <div className="crypto-img">
-        <img src={bg} alt="crypto-background" />
+        <h2 className="intro">Get All Info About Your Favorite Crypto Currency</h2>
         <input type="text" className="filter" placeholder="Search" onChange={(event) => { setInputText(event.target.value); }} />
       </div>
       <div className="coin-list">

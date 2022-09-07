@@ -34,4 +34,5 @@ Home.propTypes = {
   id: PropTypes.string.isRequired,
   pic: PropTypes.node.isRequired,
 };
+
 export default Home;
