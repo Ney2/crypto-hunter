@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.symbol-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.symbol-info {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+table {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+tr {
+  background-color: blue;
+  text-align: center;
+}
+
+td {
+  width: 100vw;
+  height: 10vh;
+}
+
+.details-header {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
