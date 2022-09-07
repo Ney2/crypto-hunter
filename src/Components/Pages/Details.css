@@ -6,13 +6,18 @@
 
 .symbol-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 2%;
 }
 
 .symbol-info {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
+  text-align: right;
+  margin-right: 20%;
+  margin-top: -20%;
+}
+
+.arrow {
+  left: 5%;
 }
 
 table {
@@ -21,18 +26,55 @@ table {
   margin-top: 2%;
 }
 
-tr {
-  background-color: blue;
-  text-align: center;
+.title {
+  text-align: left;
+  padding-left: 5%;
+}
+
+.result {
+  text-align: right;
+  padding-right: 5%;
+}
+
+.details-header h3 {
+  color: #ffd700;
+  font-weight: bolder;
 }
 
 td {
   width: 100vw;
   height: 10vh;
+  border: 1px solid #fff;
 }
 
 .details-header {
   text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 20%;
+  margin-bottom: 3%;
+}
+
+@media(min-width: 2500px) {
+  .symbol-info p {
+    font-size: 3rem;
+  }
+  
+  .title {
+    padding-left: 5%;
+    text-align: left;
+  }
+  
+  .result {
+    text-align: right;
+    padding-right: 5%;
+  }
+
+  .details-header h3 {
+    color: #ffd700;
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+
+  td {
+    border: 1px solid #fff;
+  }
 }
