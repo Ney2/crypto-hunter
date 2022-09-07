@@ -1,0 +1,10 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.accessories {
+  display: flex;
+  gap: 15px;
+}

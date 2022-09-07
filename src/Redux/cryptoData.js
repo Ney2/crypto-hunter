@@ -3,9 +3,9 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const LOAD_COINS = 'crypto-hunter/crytoData/load';
 
-const initialState = [];
+const coinList = [];
 
-const cryptoReducer = (state = initialState, action) => {
+const cryptoReducer = (state = coinList, action) => {
   switch (action.type) {
     case 'crypto-hunter/crytoData/load/fulfilled':
       return [...action.payload];
@@ -13,6 +13,8 @@ const cryptoReducer = (state = initialState, action) => {
       return state;
   }
 };
+
+export const singleCoin = (id) => `https://api.coingecko.com/api/v3/coins/${id}`;
 
 export const loadData = createAsyncThunk(
   LOAD_COINS,

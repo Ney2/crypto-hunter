@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import * as BsIcon from 'react-icons/bs';
-import * as FiIcon from 'react-icons/fi';
 import { useDispatch, useSelector, shallowEqual } from 'react-redux';
 import { loadData } from '../Redux/cryptoData';
 import Home from './Pages/Home';
@@ -15,17 +13,9 @@ const Coins = () => {
 
   return (
     <section>
-      <div className="header-container">
-        <BsIcon.BsFillArrowLeftCircleFill />
-        <p>Crypto Hunter</p>
-        <div className="accessories">
-          <BsIcon.BsMic className="mic" />
-          <FiIcon.FiSettings className="setting" />
-        </div>
-      </div>
       <div className="crypto-img">
         <img src={bg} alt="crypto-background" />
-        <input className="filter" placeholder="Seacrch" />
+        <input className="filter" placeholder="Search" />
       </div>
       <div className="coin-list">
         { coin.map((crypto) => (

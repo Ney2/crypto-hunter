@@ -4,17 +4,6 @@
   box-sizing: border-box;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 2%;
-}
-
-.accessories {
-  display: flex;
-  gap: 15px;
-}
-
 .crypto-img {
   position: relative;
   text-align: center;
