@@ -5,6 +5,7 @@ import Details from './Components/Pages/Details';
 import Navigation from './Components/Navigation/Navigation';
 import store from './Redux/configureStore';
 import Coins from './Components/Coins';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route element={<Details />} path="/details/:id" />
           </Routes>
         </div>
+        <Footer />
       </Router>
     </Provider>
   );
