@@ -1,14 +1,23 @@
 import './App.css';
 import { Provider } from 'react-redux';
-import Coins from './Components/Coins';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Details from './Components/Pages/Details';
+import Navigation from './Components/Navigation/Navigation';
 import store from './Redux/configureStore';
+import Coins from './Components/Coins';
 
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
-        <Coins />
-      </div>
+      <Router>
+        <Navigation />
+        <div className="App">
+          <Routes>
+            <Route element={<Coins />} path="/" />
+            <Route element={<Details />} path="/details/:id" />
+          </Routes>
+        </div>
+      </Router>
     </Provider>
   );
 }
