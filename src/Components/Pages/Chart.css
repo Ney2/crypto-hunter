@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chart-title {
+  text-align: center;
+  color: #ffd700;
+  padding: 5%;
+}
+
+.back-arrow {
+  background-color: #14161a;
+}
+
+@media (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .graph {
+    width: 50%;
+    height: 50%;
+    margin-left: 20%;
+  }
+}

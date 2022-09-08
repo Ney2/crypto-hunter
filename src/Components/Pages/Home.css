@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #14161a;
+  color: #fff;
+}
+
+.crypto-img {
+  position: relative;
+  width: 100vw;
+  height: 40vh;
+  background-image: url('../Assets/bg2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background: none;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.filter {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  border: none;
+  width: 50%;
+  height: 7%;
+  border-radius: 30px;
+  padding: 2%;
+  transform: translate(-50%, -50%);
+}
+
+.back-arrow {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: #fff;
+}
+
+.coin-list {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  align-items: baseline;
+}
+
+.coin {
+  border: 1px solid black;
+  padding: 2%;
+}
+
+.coin:hover {
+  border: 1px solid #fff;
+}
+
+.first-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.pic {
+  width: 50%;
+  height: 50%;
+}
+
+.second-container {
+  text-align: end;
+  padding: 2%;
+}
+
+@media (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #14161a;
+    color: #fff;
+  }
+
+  .crypto-img {
+    width: 100vw;
+    height: 60vh;
+    background-image: url('../Assets/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  input::placeholder {
+    font-size: larger;
+    color: #fff;
+  }
+
+  .coin-list {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    align-items: baseline;
+  }
+}
