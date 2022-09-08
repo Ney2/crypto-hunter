@@ -21,6 +21,7 @@ const Details = () => {
 
   useEffect(() => {
     fetchCoin();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -47,13 +48,13 @@ const Details = () => {
         </p>
       </div>
       <div className="details-header">
-        <h3>
+        <h1>
           Details About
           { ' '}
           {coin?.name}
           { ' '}
           Crypto
-        </h3>
+        </h1>
       </div>
       <table>
         <tbody>
