@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #14161a;
+  color: #fff;
 }
 
 .crypto-img {
@@ -81,6 +82,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #14161a;
+    color: #fff;
   }
 
   .crypto-img {
@@ -95,40 +97,6 @@
   input::placeholder {
     font-size: larger;
     color: #fff;
-  }
-}
-
-@media (min-width: 2500px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 2rem;
-    background-color: #14161a;
-  }
-
-  .crypto-img {
-    width: 100vw;
-    height: 60vh;
-    background-image: url('../Assets/bg2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .filter {
-    padding: 1%;
-    height: 10%;
-  }
-
-  .intro {
-    font-weight: bold;
-    font-size: 3rem;
-  }
-
-  .pic {
-    width: 30%;
-    height: 30%;
   }
 
   .coin-list {

@@ -36,7 +36,7 @@ table {
   padding-right: 5%;
 }
 
-.details-header h3 {
+.details-header h1 {
   color: #ffd700;
   font-weight: bolder;
 }
@@ -53,9 +53,15 @@ td {
   margin-bottom: 3%;
 }
 
-@media (min-width: 2500px) {
-  .symbol-info p {
-    font-size: 3rem;
+@media (min-width: 768px) {
+  .symbol-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .symbol-container img {
+    width: 30%;
+    height: 30%;
   }
 
   .title {
@@ -68,10 +74,8 @@ td {
     padding-right: 5%;
   }
 
-  .details-header h3 {
+  .details-header h1 {
     color: #ffd700;
-    font-weight: bolder;
-    font-size: 3rem;
   }
 
   td {

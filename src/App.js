@@ -6,6 +6,7 @@ import Navigation from './Components/Navigation/Navigation';
 import store from './Redux/configureStore';
 import Coins from './Components/Coins';
 import Footer from './Components/Footer/Footer';
+import Chart from './Components/Pages/Chart';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route element={<Coins />} path="/" />
             <Route element={<Details />} path="/details/:id" />
+            <Route element={<Chart />} path="/details/histroicalchart/:id" />
           </Routes>
         </div>
         <Footer />

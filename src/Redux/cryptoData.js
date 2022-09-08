@@ -15,6 +15,7 @@ const cryptoReducer = (state = coinList, action) => {
 };
 
 export const singleCoin = (id) => `https://api.coingecko.com/api/v3/coins/${id}`;
+export const historicalChart = (id) => `https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=usd&days=365`;
 
 export const loadData = createAsyncThunk(
   LOAD_COINS,
