@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const LOAD_COINS = 'crypto-hunter/crytoData/load';
 
-const coinList = [];
+export const coinList = [];
 
 const cryptoReducer = (state = coinList, action) => {
   switch (action.type) {
