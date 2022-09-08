@@ -16,8 +16,8 @@ It consists of three pages:
 - API
   
 ### Live Demo
-[Crypto Hunter](https://admirable-chimera-5ddbb5.netlify.app/)
-[Vedio](https://drive.google.com/file/d/1xoXsbl5HFcQWJ6SYrD5sAt_o1wvtSeIz/view?usp=sharing)
+- [Crypto Hunter](https://admirable-chimera-5ddbb5.netlify.app/)
+- [Vedio](https://drive.google.com/file/d/1xoXsbl5HFcQWJ6SYrD5sAt_o1wvtSeIz/view?usp=sharing)
 
 ### Getting Started
 To get a local copy up and running follow these simple example steps.
