@@ -6,7 +6,8 @@ It consists of three pages:
    - Details Page: this page displays numerical information about the chosen coin.
    - HistoricalChart Page: this page displays the line and bar graph represention of the coins numerical data.
    
- ![./Screenshots/Home.png]
+ ![](./Screenshots/Home.png)  ![](./Screenshots/info.png)  ![](./Screenshots/graph.png)
+ 
  
 ### Built With
 - React
