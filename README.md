@@ -5,8 +5,14 @@ It consists of three pages:
    - Home Page: this pages displays a list of crypto currencies together with their name, symbol and current price in the market.
    - Details Page: this page displays numerical information about the chosen coin.
    - HistoricalChart Page: this page displays the line and bar graph represention of the coins numerical data.
-   
- ![](./Screenshots/Home.png)  ![](./Screenshots/info.png)  ![](./Screenshots/graph.png)
+###### Home Page
+ ![](./Screenshots/Home.png)  
+ 
+###### Details Page
+ ![](./Screenshots/info.png)  
+ 
+###### HistoricalChart Page
+ ![](./Screenshots/graph.png)
  
  
 ### Built With
