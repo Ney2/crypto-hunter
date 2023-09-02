@@ -19,7 +19,6 @@ It consists of three pages:
 - React
 - Redux
 - CSS
-- JSX
 - JavaScript
 - Chart.js
 - API
