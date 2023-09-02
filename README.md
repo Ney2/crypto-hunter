@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 ## Crypto Hunter
-This is a mobile based web application that provides numercial data of any crypto currency.
+This is a web application that provides numercial data of any crypto currency.
 It consists of three pages: 
    - Home Page: this pages displays a list of crypto currencies together with their name, symbol and current price in the market.
    - Details Page: this page displays numerical information about the chosen coin.
