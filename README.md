@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 ## Crypto Hunter
-This is a web application that provides numercial data of any crypto currency.
+This is a web application that provides numerical data of any cryptocurrency.
 It consists of three pages: 
-   - Home Page: this pages displays a list of crypto currencies together with their name, symbol and current price in the market.
-   - Details Page: this page displays numerical information about the chosen coin.
-   - HistoricalChart Page: this page displays the line and bar graph represention of the coins numerical data.
+   - Home Page: This page displays a list of cryptocurrencies together with their name, symbol, and current price in the market.
+   - Details Page: This page displays numerical information about the chosen coin.
+   - HistoricalChart Page: this page displays the line and bar graph representation of the coin's numerical data.
 ###### Home Page
  ![](./Screenshots/Home.png)  
  
@@ -37,7 +37,7 @@ Any kind of browser and code editor.
    1. Clone the repository (https://github.com/Ney2/crypto-hunter)
    2. Then open the folder in your local environment using any code editor
    3. Open terminal
-   4. Change the directrory in your terminal to the repository
+   4. Change the directory in your terminal to the repository
    5. Type npm start in your terminal, this will open the project in your browser
 
 ### Author 1
